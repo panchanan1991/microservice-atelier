@@ -19,12 +19,21 @@ import org.springframework.web.client.RestTemplate;
 @EnableCircuitBreaker
 public class ProductCatalogServiceApplication {
 	
+	/**
+	 * Create bean for rest template
+	 * @return RestTemplate
+	 * 
+	 */
 	@Bean
 	@LoadBalanced
 	public RestTemplate getestTemplate() {
 		return new RestTemplate();
 	}
 	
+	/**
+	 * Main Method of Springboot application service
+	 * @param args
+	 */
 	public static void main(String[] args) {
 	  SpringApplication.run(ProductCatalogServiceApplication.class, args); }
 	 
