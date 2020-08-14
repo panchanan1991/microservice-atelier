@@ -3,7 +3,6 @@ package io.start.productratingservice.productratingservice;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
@@ -27,8 +26,9 @@ public class ProductRatingServiceApplication {
 	public RestTemplate getestTemplate() {
 		return new RestTemplate();
 	}
+	
 	/**
-	 * SpirngBoot Main method
+	 * Main method of Springboot application service
 	 * @param args
 	 * 
 	 */

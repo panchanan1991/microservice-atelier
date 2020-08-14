@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-
 import io.start.productratingservice.productratingservice.business.ProductRatingBusiness;
 import io.start.productratingservice.productratingservice.model.ProductRatingModel;
 import io.start.productratingservice.productratingservice.model.ProductRatingsModelTO;
