@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import io.start.productdetailsservice.productdetailsservice.business.ProductDetialsBusiness;
-import io.start.productdetailsservice.productdetailsservice.controller.ProductDetailsController;
 import io.start.productdetailsservice.productdetailsservice.model.ProductDetailsModel;
 import io.start.productdetailsservice.productdetailsservice.model.ProductDetailsModelTO;
 
