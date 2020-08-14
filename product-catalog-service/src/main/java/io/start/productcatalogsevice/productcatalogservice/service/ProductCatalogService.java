@@ -3,11 +3,9 @@ package io.start.productcatalogsevice.productcatalogservice.service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-
-import com.netflix.ribbon.hystrix.FallbackHandler;
-import com.netflix.ribbon.proxy.annotation.Hystrix;
 
 import io.start.productcatalogsevice.productcatalogservice.Business.ProductCatalogBusiness;
 import io.start.productcatalogsevice.productcatalogservice.model.CatalogModel;
@@ -19,6 +17,7 @@ import io.start.productcatalogsevice.productcatalogservice.model.ProductRatingMo
  *
  */
 @Service
+@RefreshScope
 public class ProductCatalogService {
 	
 
